@@ -1,4 +1,4 @@
-**Neural style transfer**
+**Neural Style Transfer**
 
 This project consists of a neural network model to learn the artistic style from one image and transfer it to another.
 This model can also be used to transfer styles between videos by breaking down the videos into frames.
@@ -9,12 +9,12 @@ There are two files in this project :
 gatysstyletransfer.py and
 gatysstyletransfer_animated.py
 
-Directories - 
+**Directories**
 Images - keep style and content images for gatys style transfer
 Output_Images - output after style transfer gets saved here in the format styleName_contentName.jpeg
 
 
-gatysstyletransfer.py:
+**gatysStyleTransfer.py**
 
 This file is used to apply style transfer for two images. One is the "style image" from which the style will be taken and another is the "content image" on which the style will be applied to.
 There are two folders - Images and Output_Images.
@@ -26,7 +26,9 @@ To run the program from terminal, use the command
 python gatysstyletransfer.py <styleImageName.jpg> <contentImageName.jpg>
 
 
-gatysstyletransfer_animated.py:
+
+
+**gatysStyleTransfer_animated.py**
 
 This file is used to apply style transfer to two GIFS. It takes the style from the first GIF and applies it to the content of the second GIF. It splits the GIFs into frames, applies the style transfer and then combines the frames again to create a GIF with the new style.
 
